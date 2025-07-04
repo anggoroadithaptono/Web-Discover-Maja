@@ -1,62 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌄 Discover Maja
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Discover Maja** adalah sebuah platform web edukatif dan informatif yang dirancang untuk mengeksplorasi warisan budaya dan sejarah Kerajaan Majapahit, khususnya di wilayah Trowulan, Kabupaten Mojokerto.
 
-## About Laravel
+## 🏛️ Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Eksplorasi tempat bersejarah Majapahit seperti Candi Bajang Ratu, Candi Tikus, dan lainnya.
+- Pendaftaran akun dan login pengguna.
+- Pembelian tiket tempat wisata dan pemesanan tur.
+- Statistik pembelian wisatawan berdasarkan tanggal dan kategori.
+- Informasi event budaya dan edukasi seperti:
+  - Candi Darling Trowulan
+  - Tur Edukasi Jejak Majapahit
+  - Festival Budaya Mojopahit
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🧰 Teknologi yang Digunakan
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Laravel (PHP)
+- **Database:** MySQL
+- **Charting:** Chart.js
+- **Authentication:** Laravel Auth
+- **Deployment:** GitHub + Vercel (untuk frontend)
 
-## Learning Laravel
+## 🖼️ Cuplikan Antarmuka
+![ds1](https://github.com/user-attachments/assets/e625977d-cfd5-4dc7-9cd4-5b546e657911)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![ds2](https://github.com/user-attachments/assets/51ba196f-fa18-4932-8847-9e6467c937ab)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![ds3](https://github.com/user-attachments/assets/95492c94-1110-438a-a14f-de77cf903205)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![ds4](https://github.com/user-attachments/assets/ee112f5c-560d-4f1c-8634-fb3f702e52dc)
 
-## Laravel Sponsors
+![ds5](https://github.com/user-attachments/assets/13c96d21-9d80-4e22-81db-d78443be1d36)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+![ds6](https://github.com/user-attachments/assets/912cc12e-71e3-4a6f-ba4d-78597e832f23)
 
-### Premium Partners
+Lebih lengkapnya bisa 📨 Hubungi Saya
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Silakan gunakan formulir kontak di dalam website atau hubungi saya melalui:
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# Web-Discover-Maja" 
+Email: anggoroadit01@gmail.com LinkedIn: www.linkedin.com/in/anggoroadit
