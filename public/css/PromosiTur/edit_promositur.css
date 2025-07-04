@@ -1,0 +1,390 @@
+/* === Reset & Base === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #fdf5ef;
+    color: #4b2e2e;
+    padding-bottom: 100px;
+  }
+  
+/* === Header === */
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fceee3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .logo-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4b2e2e;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+  
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      z-index: 1100;
+    }
+  
+    .hamburger-icon {
+      font-size: 24px;
+      color: #4b2e2e;
+    }
+  
+  
+    .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav-menu ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  
+    .nav-menu ul li {
+      flex: 0 0 auto;
+    }
+  
+    .nav-menu ul li a {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 20px;
+      background-color: #fdf5ef;
+      color: #4b4b4b;
+      border-color: transparent;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-menu ul li a:hover,
+    .nav-menu ul li a.active {
+      background-color: #c1440e;
+      color: white;
+      border-color: #c1440e;
+    }
+  
+    .left-menu {
+      margin-right: auto;
+    }
+  
+    .center-menu {
+      margin: 0 10px;
+    }
+  
+    /* Menata bagian kanan header */
+    .header-right {
+      display: flex;
+      align-items: center; /* Menjaga agar elemen-elemen berada di tengah secara vertikal */
+      justify-content: flex-start; /* Menyusun elemen-elemen di sebelah kanan */
+      gap: 10px;  /* Memberikan jarak antar elemen */
+    }
+  
+    /* Untuk dropdown language-selector */
+    .language-selector {
+      display: flex;
+      align-items: center;
+      margin-right: -70px; /* Memberikan jarak antara language selector dan tombol Sign Up */
+    }
+  
+    .language-selector select {
+      padding: 8px 16px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+  
+    /* Untuk tombol login dan signup */
+    .auth-buttons {
+      display: flex;
+      gap: 20px;  /* Memberikan jarak antara Sign In dan Sign Up */
+      align-items: center;
+    }
+  
+    .auth-buttons .button {
+      padding: 10px 12px;
+      border-radius: 20px;
+      background-color: white;
+       color: #c1440e;
+      border: 2px solid #c1440e;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap; /* <--- Tambahan penting */
+      line-height: 1;        /* <--- Menghindari spasi tinggi vertikal */
+      text-align: center;    /* Pastikan teks terpusat */
+    }
+    
+  
+    .auth-buttons .button:hover {
+      background-color: #c1440e;
+    color: white;
+    }
+  
+    .button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #c1440e;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+  
+    .button:hover {
+      background-color: #c1440e;
+    }
+  
+  /* === Container Form Edit === */
+  .container {
+    max-width: 700px;
+    margin: 150px auto 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+  }
+  
+  .container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #4b2e2e;
+  }
+  
+  /* === Label & Input === */
+  .container label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+    color: #4b2e2e;
+  }
+  
+  .container input[type="text"],
+  .container input[type="number"],
+  .container input[type="file"],
+  .container textarea {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fdf5ef;
+    color: #4b2e2e;
+    font-size: 14px;
+  }
+  
+  .container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* === Gambar Preview === */
+  .container img {
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* === Tombol Update === */
+  .container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #c1440e;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container button[type="submit"]:hover {
+    background-color: #a73b0c;
+  }
+  
+  /* === Footer === */
+  footer {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    background-color: #fceee3;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid #e0d7d1;
+  }
+
+  /* Responsif di atas 1024px (Tablet dan lebih besar) */
+@media screen and (max-width: 1024px) {
+  .promo-detail {
+      padding: 30px 15px;
+  }
+
+  .promo-detail h2 {
+      font-size: 1.8rem;
+  }
+
+  .promo-category,
+  .promo-price {
+      font-size: 1rem;
+  }
+
+  .promo-detail p {
+      font-size: 0.9rem;
+  }
+
+  .promo-detail .btn-pesan {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  .back-button {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}
+
+/* Responsif untuk perangkat ponsel (≤768px) */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .hamburger {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      cursor: pointer;
+  }
+
+  .nav-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  }
+
+  .nav-menu.active {
+      display: flex;
+  }
+
+  .nav-menu ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .header-right {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-top: 30px;
+  }
+
+  .language-selector,
+  .auth-buttons {
+      margin-bottom: 20px;
+  }
+
+  /* Content */
+  .container {
+      padding: 20px;
+      margin-top: 120px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  label, input, textarea {
+      font-size: 14px;
+  }
+
+  .back-button,
+  .edit-button,
+  .btn-pesan {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .logo-title {
+      font-size: 16px;
+  }
+
+  .nav-menu ul {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 0;
+  }
+
+  .header-right {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+
+  /* Article details adjustments */
+  .article-detail h2 {
+      font-size: 22px;
+  }
+
+  .article-detail p {
+      font-size: 14px;
+  }
+}
+  

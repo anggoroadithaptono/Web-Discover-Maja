@@ -1,0 +1,13 @@
+/* ✅ HARUS di paling atas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Lalu Tailwind di bawahnya */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Pindahkan ini ke paling atas */
+@import url('./register.css');
+/* === Tambahkan ini untuk custom style login */
+@import './login.css';

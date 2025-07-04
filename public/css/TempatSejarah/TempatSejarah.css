@@ -1,0 +1,439 @@
+/* === Reset Global & Font === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background-color: #fceee3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+body {
+  padding-top: 80px; /* Add space at the top of the page to prevent the header from covering content */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4b2e2e;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .hamburger-icon {
+    font-size: 24px;
+    color: #4b2e2e;
+  }
+
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu ul li {
+    flex: 0 0 auto;
+  }
+
+  .nav-menu ul li a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #fdf5ef;
+    color: #4b4b4b;
+    border-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu ul li a:hover,
+  .nav-menu ul li a.active {
+    background-color: #c1440e;
+    color: white;
+    border-color: #c1440e;
+  }
+
+  .left-menu {
+    margin-right: auto;
+  }
+
+  .center-menu {
+    margin: 0 10px;
+  }
+
+  /* Menata bagian kanan header */
+  .header-right {
+    display: flex;
+    align-items: center; /* Menjaga agar elemen-elemen berada di tengah secara vertikal */
+    justify-content: flex-start; /* Menyusun elemen-elemen di sebelah kanan */
+    gap: 10px;  /* Memberikan jarak antar elemen */
+  }
+
+  /* Untuk dropdown language-selector */
+  .language-selector {
+    display: flex;
+    align-items: center;
+    margin-right: -70px; /* Memberikan jarak antara language selector dan tombol Sign Up */
+  }
+
+  .language-selector select {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  /* Untuk tombol login dan signup */
+  .auth-buttons {
+    display: flex;
+    gap: 20px;  /* Memberikan jarak antara Sign In dan Sign Up */
+    align-items: center;
+  }
+
+  .auth-buttons .button {
+    padding: 10px 12px;
+    border-radius: 20px;
+    background-color: white;
+     color: #c1440e;
+    border: 2px solid #c1440e;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* <--- Tambahan penting */
+    line-height: 1;        /* <--- Menghindari spasi tinggi vertikal */
+    text-align: center;    /* Pastikan teks terpusat */
+  }
+  
+
+  .auth-buttons .button:hover {
+    background-color: #c1440e;
+  color: white;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #c1440e;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+
+  .button:hover {
+    background-color: #c1440e;
+  }
+
+
+/* === Filter Bar === */
+.filter-buttons {
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen dengan jarak antara kiri dan kanan */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fceee3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  position: sticky;
+  top: 80px;
+  z-index: 999;
+}
+
+/* Filter Kategori di pojok kiri */
+.filter-buttons .dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto; /* Membuat filter berada di kiri */
+}
+
+/* Menata dropdown filter */
+.filter-buttons select {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Tombol-tombol filter dan lainnya di pojok kanan */
+.filter-buttons a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  background-color: #ff6f00;
+  color: white;
+  margin-left: 10px;
+}
+
+
+.filter-buttons .tambah-destinasi-button {
+  margin-left: 10px;
+}
+
+
+.filter-buttons .destinasi-button {
+  background-color: #ff6f00;
+}
+
+.filter-buttons a:hover {
+  background-color: #e65100;
+}
+
+.filter-buttons .destinasi-button:hover {
+  background-color: #e65100;
+}
+
+/* === Judul Tengah === */
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #4b2e2e;
+  margin-top: 20px;  /* Memberikan jarak atas antara judul dan tombol filter */
+  margin-bottom: 20px;  /* Memberikan jarak bawah antara judul dan konten */
+  padding: 10px;
+}
+
+/* === Kotak Tempat === */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px; /* Make sure content has a margin to avoid header overlap */
+}
+
+.place-card {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+  z-index: 1; /* Make sure the content is not covered */
+}
+
+.place-card:hover {
+  transform: scale(1.02);
+}
+
+
+
+.place-card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.place-card a {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 8px 20px;
+  background-color: #c1440e;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.place-card a:hover {
+  background-color: #c1440e;
+  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.4);
+}
+
+.place-card .delete-button,
+.place-card .edit-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4c0606;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.place-card .delete-button:hover,
+.place-card .edit-button:hover {
+  background-color: #530e0e;
+}
+
+.place-card img {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: 14px;
+}
+
+/* === Tombol Lihat Pembelian === */
+.lihat-pembelian-button {
+  background-color: #28a745; /* Warna hijau untuk tombol lihat pembelian */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.lihat-pembelian-button:hover {
+  background-color: #c1440e; /* Mengubah warna saat hover */
+}
+
+/* === Tombol Tambah Destinasi === */
+.tambah-destinasi-button {
+  background-color: #c1440e; /* Warna biru untuk tombol tambah destinasi */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  border: 2px solid #c1440e; /* Menambahkan border berwarna biru */
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.tambah-destinasi-button:hover {
+  background-color: #822a04; /* Mengubah warna saat hover */
+  border-color: #822a04;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+.tambah-destinasi-button:focus {
+  outline: none;
+  border-color: #c1440e;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+  /* Mobile version of the header */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    padding-top: 100px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-buttons select,
+  .filter-buttons a {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  .filter-buttons a {
+    margin-top: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .place-card {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}

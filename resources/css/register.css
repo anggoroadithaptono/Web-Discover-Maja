@@ -1,0 +1,169 @@
+/* === FONT AWESOME === */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+
+/* === GLOBAL BACKGROUND DAN FONT === */
+body {
+  background: #f4f1ea;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Borobudur-Nothwest-view.jpg/1280px-Borobudur-Nothwest-view.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: brightness(0.9) saturate(0.6);
+  padding-top: 60px;
+  margin: 0;
+  color: #3e2f1c;
+}
+
+/* === ANIMASI === */
+.fade-in {
+  animation: fadeIn 0.4s ease-in;
+}
+.fade-out {
+  animation: fadeOut 0.4s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: rotateY(-90deg); }
+  to { opacity: 1; transform: rotateY(0deg); }
+}
+@keyframes fadeOut {
+  from { opacity: 1; transform: rotateY(0deg); }
+  to { opacity: 0; transform: rotateY(90deg); }
+}
+
+/* === TOGGLE SWITCH === */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #8c6239;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #a67c52;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.slider:before {
+  content: "⮘";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 1.5px;
+  background-color: #f4f1ea;
+  color: #3e2f1c;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+  content: "⮚";
+}
+
+/* === FORM CARD KHUSUS === */
+.form-card {
+  background-color: rgba(213, 191, 163, 0.95);
+  padding: 40px;
+  border: 2px solid #8c6239;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #8c623966;
+  width: 350px;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3e2f1c;
+  backdrop-filter: blur(4px);
+}
+
+/* === INPUT ICON === */
+.input-icon {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #8c6239;
+  font-size: 14px;
+}
+.input-icon input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: none;
+  background: #f4f1ea;
+  color: #3e2f1c;
+  border-bottom: 2px solid #8c6239;
+}
+
+/* === BUTTON DEFAULT === */
+.form-card button {
+  background: #a67c52;
+  color: #f4f1ea;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.form-card button:hover {
+  background-color: #946b3d;
+}
+
+/* === LINK STYLING === */
+.link {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+.link a {
+  color: #8c6239;
+  text-decoration: none;
+}
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* === SOCIAL LOGIN (KHUSUS LOGIN PAGE) === */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.social button {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  background: #a67c52;
+  color: #f4f1ea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
